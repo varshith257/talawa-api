@@ -1,13 +1,11 @@
 import type { QueryResolvers } from "../../types/generatedGraphQLTypes";
 import { isSampleOrganization } from "../Query/organizationIsSample";
-import { actionItem } from "./actionItem";
 import { actionItemCategoriesByOrganization } from "./actionItemCategoriesByOrganization";
 import { advertisementsConnection } from "./advertisementsConnection";
-import { actionItemCategory } from "./actionItemCategory";
 import { actionItemsByEvent } from "./actionItemsByEvent";
 import { actionItemsByOrganization } from "./actionItemsByOrganization";
-import { agendaCategory } from "./agendaCategory";
 import { checkAuth } from "./checkAuth";
+import { getCommunityData } from "./getCommunityData";
 import { customDataByOrganization } from "./customDataByOrganization";
 import { customFieldsByOrganization } from "./customFieldsByOrganization";
 import { directChatsByUserID } from "./directChatsByUserID";
@@ -32,20 +30,20 @@ import { user } from "./user";
 import { userLanguage } from "./userLanguage";
 import { users } from "./users";
 import { usersConnection } from "./usersConnection";
+import { agendaCategory } from "./agendaCategory";
 import { getAllAgendaItems } from "./getAllAgendaItems";
 import { getAgendaItem } from "./agendaItemById";
 import { venue } from "./venue";
 
 export const Query: QueryResolvers = {
-  actionItem,
   actionItemsByEvent,
-  actionItemCategory,
   agendaCategory,
   getAgendaItem,
   getAllAgendaItems,
   actionItemsByOrganization,
   actionItemCategoriesByOrganization,
   checkAuth,
+  getCommunityData,
   customFieldsByOrganization,
   customDataByOrganization,
   directChatsByUserID,

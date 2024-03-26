@@ -41,8 +41,8 @@ import { createUserTag } from "./createUserTag";
 import { createVenue } from "./createVenue";
 import { deleteVenue } from "./deleteVenue";
 import { editVenue } from "./editVenue";
-import { deleteAgendaCategory } from "./deleteAgendaCategory";
 import { deleteDonationById } from "./deleteDonationById";
+import { deleteAgendaCategory } from "./deleteAgendaCategory";
 import { forgotPassword } from "./forgotPassword";
 import { inviteEventAttendee } from "./inviteEventAttendee";
 import { joinPublicOrganization } from "./joinPublicOrganization";
@@ -79,6 +79,7 @@ import { removeUserFromGroupChat } from "./removeUserFromGroupChat";
 import { removeUserFromUserFamily } from "./removeUserFromUserFamily";
 import { removeUserImage } from "./removeUserImage";
 import { removeUserTag } from "./removeUserTag";
+import { resetCommunity } from "./resetCommunity";
 import { revokeRefreshTokenForUser } from "./revokeRefreshTokenForUser";
 import { saveFcmToken } from "./saveFcmToken";
 import { sendMembershipRequest } from "./sendMembershipRequest";
@@ -95,6 +96,7 @@ import { updateActionItem } from "./updateActionItem";
 import { updateActionItemCategory } from "./updateActionItemCategory";
 import { updateAdvertisement } from "./updateAdvertisement";
 import { updateAgendaCategory } from "./updateAgendaCategory";
+import { updateCommunity } from "./updateCommunity";
 import { updateEvent } from "./updateEvent";
 import { updateEventVolunteer } from "./updateEventVolunteer";
 import { updateFund } from "./updateFund";
@@ -106,11 +108,15 @@ import { updateUserPassword } from "./updateUserPassword";
 import { updateUserProfile } from "./updateUserProfile";
 import { updateUserRoleInOrganization } from "./updateUserRoleInOrganization";
 import { updateUserTag } from "./updateUserTag";
-import { updateUserType } from "./updateUserType";
 import { deleteAdvertisement } from "./deleteAdvertisement";
+import { updateFundraisingCampaign } from "./updateFundraisingCampaign";
+import { updateFundraisingCampaignPledge } from "./updateFundCampaignPledge";
 import { createAgendaItem } from "./createAgendaItem";
 import { removeAgendaItem } from "./removeAgendaItem";
 import { updateAgendaItem } from "./updateAgendaItem";
+import { createAgendaSection } from "./createAgendaSection";
+import removeAgendaSection from "./removeAgendaSection";
+import { updateAgendaSection } from "./updateAgendaSection";
 
 export const Mutation: MutationResolvers = {
   acceptAdmin,
@@ -142,6 +148,7 @@ export const Mutation: MutationResolvers = {
   createAdvertisement,
   createAgendaCategory,
   createAgendaItem,
+  createAgendaSection,
   createDirectChat,
   createDonation,
   createEvent,
@@ -180,6 +187,7 @@ export const Mutation: MutationResolvers = {
   removeAdmin,
   removeActionItem,
   removeAgendaItem,
+  removeAgendaSection,
   removeComment,
   removeDirectChat,
   removeEvent,
@@ -197,6 +205,7 @@ export const Mutation: MutationResolvers = {
   removeUserFromGroupChat,
   removeUserImage,
   removeUserTag,
+  resetCommunity,
   revokeRefreshTokenForUser,
   saveFcmToken,
   sendMembershipRequest,
@@ -213,6 +222,8 @@ export const Mutation: MutationResolvers = {
   updateActionItemCategory,
   updateAgendaCategory,
   updateAgendaItem,
+  updateAgendaSection,
+  updateCommunity,
   updateEvent,
   updateEventVolunteer,
   updateFund,
@@ -221,8 +232,9 @@ export const Mutation: MutationResolvers = {
   updatePluginStatus,
   updateUserProfile,
   updateUserPassword,
-  updateUserType,
   updateUserTag,
   updatePost,
   updateAdvertisement,
+  updateFundraisingCampaign,
+  updateFundraisingCampaignPledge,
 };

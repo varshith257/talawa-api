@@ -29,18 +29,22 @@ const config: CodegenConfig = {
 
           ActionItemCategory:
             "../models/ActionItemCategory#InterfaceActionItemCategory",
+          AppUserProfile: "../models/AppUserProfile#InterfaceAppUserProfile",
+          AgendaCategory: "../models/AgendaCategory#InterfaceAgendaCategory",
 
           Advertisement: "../models/Advertisement#InterfaceAdvertisement",
 
-          AgendaCategory: "../models/AgendaCategory#InterfaceAgendaCategory",
-
           AgendaItem: "../models/AgendaItem#InterfaceAgendaItem",
+
+          AgendaSection: "../models/AgendaSection#InterfaceAgendaSection",
 
           CheckIn: "../models/CheckIn#InterfaceCheckIn",
 
           MessageChat: "../models/MessageChat#InterfaceMessageChat",
 
           Comment: "../models/Comment#InterfaceComment",
+
+          Community: "../models/Community#InterfaceCommunity",
 
           DirectChat: "../models/DirectChat#InterfaceDirectChat",
 
@@ -89,9 +93,13 @@ const config: CodegenConfig = {
 
           Post: "../models/Post#InterfacePost",
 
+          RecurrenceRule: "../models/RecurrenceRule#InterfaceRecurrenceRule",
+
           UserTag: "../models/OrganizationTagUser#InterfaceOrganizationTagUser",
 
           User: "../models/User#InterfaceUser",
+
+          Venue: "../models/Venue#InterfaceVenue",
         },
 
         useTypeImports: true,
